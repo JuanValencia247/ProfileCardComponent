@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(25, 162, 174);
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-image: url("../images/bg-pattern-top.svg"), url("../images/bg-pattern-bottom.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: right 51vw bottom 20vh, left 45vw top 50vh;
+}
+
+.main-container {
+  width: 330;
+  height: 375;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 148px auto 50px;
+  position: relative;
+}
+.main-container__card {
+  width: 100%;
+  height: 140px;
+}
+.main-container__usuario {
+  background-color: white;
+  text-align: center;
+}
+.main-container__usuario-container-image {
+  position: absolute;
+  top: 87px;
+  left: 35%;
+  height: 96px;
+}
+.main-container__usuario-image {
+  border: 3px solid white;
+  border-radius: 50%;
+  transition: 300ms;
+}
+.main-container__usuario-image:hover {
+  border: 3px solid rgb(185, 229, 233);
+  border-radius: 50%;
+  transition: 300ms;
+}
+.main-container__usuario-container-data {
+  height: 150px;
+  padding: 70px;
+}
+.main-container__usuario-name {
+  color: hsl(229deg, 23%, 23%);
+  font-weight: 700;
+}
+.main-container__usuario-age {
+  color: hsl(0deg, 0%, 59%);
+}
+.main-container__usuario-city {
+  color: hsl(0deg, 0%, 59%);
+  margin-top: 10px;
+  font-size: 0.8em;
+}
+.main-container__stats {
+  border-top: 1px solid hsl(0deg, 0%, 59%);
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 90px;
+}
+.main-container__stats-container {
+  text-align: center;
+}
+.main-container__stats-number {
+  color: hsl(229deg, 23%, 23%);
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.main-container__stats-description {
+  color: hsl(0deg, 0%, 59%);
+  font-size: 0.6em;
+  letter-spacing: 2px;
+}
+
+@media (min-width: 1440px) {
+  .main-container {
+    width: 350px;
+  }
+}
+.attribution {
+  font-size: 12px;
+  text-align: center;
+  margin: 20px;
+}
+.attribution .a {
+  color: hsl(228deg, 45%, 44%);
+}
+
+/*# sourceMappingURL=styles.css.map */
